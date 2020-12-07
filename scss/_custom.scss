@@ -1,8 +1,65 @@
 body{
     background: $bg-very-dark-blue;
     color: $text-white;
+    font-family: "Inter", sans-serif;
+
+    h1{
+        color: $text-white;
+    }
 }
 
-h1{
-    color: white;
+.dash-card{
+    padding: $dash-card-padding;
+    background: $card-bg;
+
+    &--facebook{
+        @extend .dash-card;
+        border-top: 4px solid $facebook;
+    }
+
+    &--twitter{
+        @extend .dash-card;
+        border-top: 4px solid $twitter;
+    }
+
+    &--instagram{
+        @extend .dash-card;
+        border-top: 4px solid;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(to left, $instagram-1, $instagram-2);
+    }
+
+    &--youtube{
+        @extend .dash-card;
+        border-top: 4px solid $youtube;
+    }
+
+    .profile-id {
+        margin-bottom: $base-unit * 2;
+
+        & img{
+            margin-right: $base-unit;
+        }
+    } 
+
+    .counter{
+        font-size: $counter;
+        font-weight: 700;
+
+        &-exp{
+            text-transform: uppercase;
+            letter-spacing: 0.25rem;
+            margin: -$base-unit 0 $base-unit * 3; 
+        }
+    }
+
+    .changing{
+        color: $lime-green;
+        font-size: 0.9rem;
+        font-weight: 700;
+    }
+    
 }
+
+
+

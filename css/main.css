@@ -4410,7 +4410,7 @@ input[type="button"].btn-block {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #252a41;
+  background-color: #222639;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
@@ -9650,11 +9650,60 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 body {
-  background: #1f212e;
+  background: #1e202a;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+
+body h1 {
   color: white;
 }
 
-h1 {
-  color: white;
+.dash-card, .dash-card--facebook, .dash-card--twitter, .dash-card--instagram, .dash-card--youtube {
+  padding: 16px 36px;
+  background: #222639;
+}
+
+.dash-card--facebook {
+  border-top: 4px solid #198ff5;
+}
+
+.dash-card--twitter {
+  border-top: 4px solid #1ca0f2;
+}
+
+.dash-card--instagram {
+  border-top: 4px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, #fdc468, #df4996);
+}
+
+.dash-card--youtube {
+  border-top: 4px solid #c4032a;
+}
+
+.dash-card .profile-id, .dash-card--facebook .profile-id, .dash-card--twitter .profile-id, .dash-card--instagram .profile-id, .dash-card--youtube .profile-id {
+  margin-bottom: 16px;
+}
+
+.dash-card .profile-id img, .dash-card--facebook .profile-id img, .dash-card--twitter .profile-id img, .dash-card--instagram .profile-id img, .dash-card--youtube .profile-id img {
+  margin-right: 8px;
+}
+
+.dash-card .counter, .dash-card--facebook .counter, .dash-card--twitter .counter, .dash-card--instagram .counter, .dash-card--youtube .counter {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.dash-card .counter-exp, .dash-card--facebook .counter-exp, .dash-card--twitter .counter-exp, .dash-card--instagram .counter-exp, .dash-card--youtube .counter-exp {
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  margin: -8px 0 24px;
+}
+
+.dash-card .changing, .dash-card--facebook .changing, .dash-card--twitter .changing, .dash-card--instagram .changing, .dash-card--youtube .changing {
+  color: #1db489;
+  font-size: 0.9rem;
+  font-weight: 700;
 }
 /*# sourceMappingURL=main.css.map */
