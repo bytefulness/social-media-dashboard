@@ -1,2 +1,2 @@
 # social-media-dashboard
-Project for practising Bootsrap SASS and custom SASS.
+Project for practising Boostsrap SASS and custom SASS.
