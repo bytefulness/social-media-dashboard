@@ -8,9 +8,26 @@ body{
     }
 }
 
+.changing-up{
+    color: $lime-green;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.changing-down{
+    color: $bright-red;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
 .dash-card{
     padding: $dash-card-padding;
     background: $card-bg;
+
+    &:hover{
+        cursor: pointer;
+        background: $card-bg-hover;
+    }
 
     &--facebook{
         @extend .dash-card;
@@ -35,6 +52,7 @@ body{
     }
 
     .profile-id {
+        color: $text-color;
         margin-bottom: $base-unit * 2;
 
         & img{
@@ -47,18 +65,41 @@ body{
         font-weight: 700;
 
         &-exp{
+            color: $text-color;
             text-transform: uppercase;
             letter-spacing: 0.25rem;
             margin: -$base-unit 0 $base-unit * 3; 
         }
     }
+    
+}
 
-    .changing{
-        color: $lime-green;
-        font-size: 0.9rem;
-        font-weight: 700;
+.overview{
+    background: $card-bg;
+    padding: $overview-card-padding;
+    margin-bottom: $base-unit * 3;
+
+    &:hover{
+        cursor: pointer;
+        background: $card-bg-hover;
     }
     
+    &__header{
+        
+        span{
+            font-weight: 700;
+            color: $text-color;
+        }
+    }
+
+    &__body{
+        margin-top: 3em;
+
+        .counter--small{
+            font-size: 2rem;
+            font-weight: 700;
+        }
+    }
 }
 
 

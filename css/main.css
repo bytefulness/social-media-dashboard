@@ -9659,9 +9659,26 @@ body h1 {
   color: white;
 }
 
+.changing-up {
+  color: #1db489;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.changing-down {
+  color: #dc414c;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
 .dash-card, .dash-card--facebook, .dash-card--twitter, .dash-card--instagram, .dash-card--youtube {
   padding: 16px 36px;
   background: #222639;
+}
+
+.dash-card:hover, .dash-card--facebook:hover, .dash-card--twitter:hover, .dash-card--instagram:hover, .dash-card--youtube:hover {
+  cursor: pointer;
+  background: #2b304a;
 }
 
 .dash-card--facebook {
@@ -9683,6 +9700,7 @@ body h1 {
 }
 
 .dash-card .profile-id, .dash-card--facebook .profile-id, .dash-card--twitter .profile-id, .dash-card--instagram .profile-id, .dash-card--youtube .profile-id {
+  color: #8b97c6;
   margin-bottom: 16px;
 }
 
@@ -9696,14 +9714,34 @@ body h1 {
 }
 
 .dash-card .counter-exp, .dash-card--facebook .counter-exp, .dash-card--twitter .counter-exp, .dash-card--instagram .counter-exp, .dash-card--youtube .counter-exp {
+  color: #8b97c6;
   text-transform: uppercase;
   letter-spacing: 0.25rem;
   margin: -8px 0 24px;
 }
 
-.dash-card .changing, .dash-card--facebook .changing, .dash-card--twitter .changing, .dash-card--instagram .changing, .dash-card--youtube .changing {
-  color: #1db489;
-  font-size: 0.9rem;
+.overview {
+  background: #222639;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.overview:hover {
+  cursor: pointer;
+  background: #2b304a;
+}
+
+.overview__header span {
+  font-weight: 700;
+  color: #8b97c6;
+}
+
+.overview__body {
+  margin-top: 3em;
+}
+
+.overview__body .counter--small {
+  font-size: 2rem;
   font-weight: 700;
 }
 /*# sourceMappingURL=main.css.map */
