@@ -1,8 +1,106 @@
 body{
     background: $bg-very-dark-blue;
     color: $text-white;
+    font-family: "Inter", sans-serif;
+
+    h1{
+        color: $text-white;
+    }
 }
 
-h1{
-    color: white;
+.changing-up{
+    color: $lime-green;
+    font-size: 0.9rem;
+    font-weight: 700;
 }
+
+.changing-down{
+    color: $bright-red;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.dash-card{
+    padding: $dash-card-padding;
+    background: $card-bg;
+
+    &:hover{
+        cursor: pointer;
+        background: $card-bg-hover;
+    }
+
+    &--facebook{
+        @extend .dash-card;
+        border-top: 4px solid $facebook;
+    }
+
+    &--twitter{
+        @extend .dash-card;
+        border-top: 4px solid $twitter;
+    }
+
+    &--instagram{
+        @extend .dash-card;
+        border-top: 4px solid;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(to left, $instagram-1, $instagram-2);
+    }
+
+    &--youtube{
+        @extend .dash-card;
+        border-top: 4px solid $youtube;
+    }
+
+    .profile-id {
+        color: $text-color;
+        margin-bottom: $base-unit * 2;
+
+        & img{
+            margin-right: $base-unit;
+        }
+    } 
+
+    .counter{
+        font-size: $counter;
+        font-weight: 700;
+
+        &-exp{
+            color: $text-color;
+            text-transform: uppercase;
+            letter-spacing: 0.25rem;
+            margin: -$base-unit 0 $base-unit * 3; 
+        }
+    }
+    
+}
+
+.overview{
+    background: $card-bg;
+    padding: $overview-card-padding;
+    margin-bottom: $base-unit * 3;
+
+    &:hover{
+        cursor: pointer;
+        background: $card-bg-hover;
+    }
+    
+    &__header{
+        
+        span{
+            font-weight: 700;
+            color: $text-color;
+        }
+    }
+
+    &__body{
+        margin-top: 3em;
+
+        .counter--small{
+            font-size: 2rem;
+            font-weight: 700;
+        }
+    }
+}
+
+
+

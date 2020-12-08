@@ -16,7 +16,7 @@ $container-max-widths: (
 // Colors
 
 $lime-green: hsl(163, 72%, 41%);
-$brigt-red: hsl(356, 69%, 56%);
+$bright-red: hsl(356, 69%, 56%);
 
 $facebook: hsl(208, 92%, 53%);
 $twitter: hsl(203, 89%, 53%);
@@ -25,8 +25,9 @@ $instagram-2: hsl(329, 70%, 58%);
 $youtube: hsl(348, 97%, 39%); 
 
 // Theme Colors
-$bg-very-dark-blue:hsl(232, 19%, 15%);
-$card-bg: hsl(228, 28%, 20%);
+$bg-very-dark-blue:hsl(230, 17%, 14%);
+$card-bg: hsl(230, 25%, 18%);
+$card-bg-hover: hsl(230°, 27%, 23%);
 $text-color: hsl(228, 34%, 66%);
 $text-white: hsl(0, 0%, 100%);
 
@@ -34,6 +35,14 @@ $text-white: hsl(0, 0%, 100%);
 $font-size: 14px;
 $font-family-primary: "Inter", sans-serif;
 
+// Helpers
+$base-unit: 8px;
+$dash-card-padding: 16px 36px;
+$overview-card-padding: 24px;
+
+
+// Card
+$counter: 4rem;
 // Bootstrapt SASS
 @import "../node_modules/bootstrap/scss/bootstrap";
 
