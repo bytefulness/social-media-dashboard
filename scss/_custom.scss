@@ -5,7 +5,26 @@ body{
 
     h1{
         color: $text-white;
+        font-weight: 700;
     }
+
+    h2{
+        font-weight: 700;
+        padding: $header-padding;
+    }
+}
+
+header{
+    padding: $header-padding;
+
+    span{
+        color: $text-color;
+        font-weight: 700;
+    }
+}
+
+footer{
+    padding: 2em 0 2em;
 }
 
 .changing-up{
@@ -21,8 +40,9 @@ body{
 }
 
 .dash-card{
-    padding: $dash-card-padding;
     background: $card-bg;
+    padding: $dash-card-padding;
+    margin-bottom: $base-unit * 3;
 
     &:hover{
         cursor: pointer;

@@ -9657,6 +9657,25 @@ body {
 
 body h1 {
   color: white;
+  font-weight: 700;
+}
+
+body h2 {
+  font-weight: 700;
+  padding: 48px 0 36px;
+}
+
+header {
+  padding: 48px 0 36px;
+}
+
+header span {
+  color: #8b97c6;
+  font-weight: 700;
+}
+
+footer {
+  padding: 2em 0 2em;
 }
 
 .changing-up {
@@ -9672,8 +9691,9 @@ body h1 {
 }
 
 .dash-card, .dash-card--facebook, .dash-card--twitter, .dash-card--instagram, .dash-card--youtube {
-  padding: 16px 36px;
   background: #222639;
+  padding: 16px 36px;
+  margin-bottom: 24px;
 }
 
 .dash-card:hover, .dash-card--facebook:hover, .dash-card--twitter:hover, .dash-card--instagram:hover, .dash-card--youtube:hover {
